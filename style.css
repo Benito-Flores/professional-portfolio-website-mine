@@ -80,6 +80,15 @@ h3 {
   opacity: .85;
 }
 
+.body-header-links {
+  opacity: .8;
+}
+
+.body-header-links:hover,
+.body-header-links:focus {
+  opacity: 1;
+}
+
 /* 
 ============ splash container ============
 */
