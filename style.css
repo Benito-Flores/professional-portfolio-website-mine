@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red;*/
+  /* border: 1px solid red; */
 }
 
 li {
@@ -32,6 +32,22 @@ body {
   background-color: aliceblue;
 }
 
+h1 {
+  font-size: ;
+}
+
+h2 {
+  font-size: ;
+}
+
+h3 {
+  font-size: ;
+}
+
+.small-font {
+  font-size: .6rem;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -42,4 +58,99 @@ body {
 
 .letter-spacing {
   letter-spacing: 2px;
+}
+
+.under-line {
+  text-decoration: underline;
+}
+
+/* 
+============ body header ============
+*/
+
+.body-header {
+  background-color: #1A202C;
+  color: white;
+  padding-block: .25em;
+}
+
+.body-header-contact-info {
+  text-align: center;
+  opacity: .85;
+}
+
+/* 
+============ splash container ============
+*/
+
+.splash-container {
+  text-align: center;
+  padding: .5em;
+}
+
+  /* -- splash header -- */
+
+  .splash-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .splash-title-container {
+    line-height: 1em;
+    padding: .5em;
+  }  
+
+  .splash-header-link-container {
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .splash-header-links {
+    font-weight: 700;
+    color: #636363;
+    transition: .5s
+  }
+
+  .splash-header-links:hover,
+  .splash-header-links:focus {
+    color: black;
+  }
+
+  .current {
+    border-bottom: 2px solid black;
+    color: black;
+    cursor: default;
+  }
+
+/* 
+============ media queries ============
+*/
+
+@media (min-width: 700px) {
+
+  .body-header {
+    padding-inline: 1.75em;
+  }
+
+  .body-header-contact-info {
+    text-align: right;
+  }
+
+  .splash-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5em;
+    max-width: 80em;
+    margin-inline: auto;
+  }
+
+  .splash-title-container {
+    text-align: left;
+  }
+
+  .splash-header-link-container {
+    padding: initial;
+  }
+
 }
