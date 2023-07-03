@@ -1,0 +1,45 @@
+/* 
+============ global ============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red;*/
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/* 
+============ typography ============
+*/
+
+body {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  background-color: aliceblue;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+}
