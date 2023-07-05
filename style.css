@@ -46,7 +46,7 @@ h3 {
 }
 
 .small-font {
-  font-size: .6rem;
+  font-size: .625rem;
 }
 
 .capitalize {
@@ -63,6 +63,10 @@ h3 {
 
 .under-line {
   text-decoration: underline;
+}
+
+.strong {
+  font-weight: 800;
 }
 
 /* 
@@ -95,7 +99,6 @@ h3 {
 
 .splash-container {
   text-align: center;
-  padding: .5em;
 }
 
   /* -- splash header -- */
@@ -103,16 +106,21 @@ h3 {
   .splash-header {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid grey;
+    padding: .75em;
   }
 
   .splash-title-container {
     line-height: 1em;
-    padding: .5em;
   }  
 
+  .splash-title-text {
+    line-height: 1em;
+  }
+
   .splash-header-link-container {
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-around;
+    margin-top: .8em;
   }
 
   .splash-header-links {
@@ -132,11 +140,55 @@ h3 {
     cursor: default;
   }
 
+  /* -- splash content container -- */
+
+  .splash-content-container {
+    flex-direction: column;
+  }
+
+  .splash-content {
+    text-align: left;
+    margin-inline: 1em;
+    flex-direction: column;
+  }
+
+  .splash-content-title {
+    line-height: 1.1em;
+    margin-block: .75em;
+  }
+
+  .splash-content-info {
+    margin-block: 1.5em; 
+  }
+
+  .splash-content-link-container {
+    gap: 1.5em;
+    margin-block: 1.5em;
+    flex-wrap: wrap;
+    }
+  
+
+  .splash-content-link {
+    display: block;
+    background-color: #688CCD;
+    padding: .5em 2.5em;
+    border-radius: 4px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    cursor: pointer;
+    transition: .5s
+  }
+
+  .splash-content-link:hover,
+  .splash-content-link:focus {
+    opacity: .8;
+  }
+
 /* 
 ============ media queries ============
 */
 
-@media (min-width: 700px) {
+@media (min-width: 681px) {
 
   .body-header {
     padding-inline: 1.75em;
@@ -150,7 +202,8 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 5em;
+    border-bottom: none;
+    padding: 1em 5em;
     max-width: 80em;
     margin-inline: auto;
   }
@@ -160,7 +213,40 @@ h3 {
   }
 
   .splash-header-link-container {
-    padding: initial;
+    gap: 3em;
+    margin-top: initial;
+  }
+
+  .splash-content-container {
+    flex-direction: row;
+  }
+
+  .splash-content-img {
+    display: none;
+  }
+
+  .splash-content-container {
+    background-image: url(./img/me-three.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 45em;
+    max-width: 80em;
+    margin-inline: auto;
+  }
+
+  .splash-content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 3em;
+  }
+
+  .splash-content-title,
+  .splash-content-info {
+    color: white;
   }
 
 }
