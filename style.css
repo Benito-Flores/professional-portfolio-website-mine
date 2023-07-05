@@ -221,6 +221,10 @@ h3 {
     flex-direction: row;
   }
 
+  .splash-content-img {
+    display: none;
+  }
+
   .splash-content-container {
     background-image: url(./img/me-three.JPG);
     background-position: center;
