@@ -176,6 +176,21 @@ body {
 ============ main container ============
 */
 
+  /* -- main container two -- */
+
+  .main-container-two {
+    text-align: center;
+    margin-top: 2em;
+    padding: 3em 2em;
+    background-color: #688CCD;
+    color: white;
+  }
+
+  .main-container-two-title {
+    line-height: 1em;
+    margin-bottom: 1em;
+  }
+
   /* -- main container one -- */
 
   .main-container-one {
@@ -185,11 +200,16 @@ body {
     margin-inline: auto;
   }
 
+  .main-container-one a {
+    margin-bottom: 1.5em;
+  }
+
   .success-stories-container,
   .faq-container {
     background-color: #e6e6e6;
-    margin-bottom: 1.5em;
     transition: transform 1s;
+    color: black;
+    height: 100%;
   }
 
   .success-stories-container:hover,
@@ -378,6 +398,15 @@ body {
   .footer-svg-link-container,
   .codex-footer {
     max-width: 600px;
+  }
+
+  .main-container-two {
+    margin-inline: auto;
+  }
+
+  .main-container-two-summary {
+    max-width: 60em;
+    margin-inline: auto;
   }
 
 }
