@@ -22,6 +22,10 @@ a {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 /* 
 ============ typography ============
 */
@@ -169,6 +173,57 @@ body {
   }
 
 /* 
+============ main container ============
+*/
+
+  /* -- main container one -- */
+
+  .main-container-one {
+    grid-template-columns: 1fr;
+    margin: 2em .5em;
+    max-width: 80em;
+    margin-inline: auto;
+  }
+
+  .success-stories-container,
+  .faq-container {
+    background-color: #e6e6e6;
+    margin-bottom: 1.5em;
+    transition: transform 1s;
+  }
+
+  .success-stories-container:hover,
+  .success-stories-container:focus,
+  .faq-container:hover,
+  .faq-container:focus {
+    opacity: .9;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .content-container {
+    padding: 1em;
+  }
+
+  .success-stories-title,
+  .faq-title {
+    color: #688CCD;
+    line-height: 1em;
+    margin-bottom: .8em;
+  }
+
+  .reviewer {
+    text-align: right;
+    margin-top: .9em;
+    margin-right: 2em;
+  }
+
+  .success-stories-img,
+  .faq-img {
+    width: 100%;
+  }
+
+/* 
 ============ media queries ============
 */
 
@@ -235,6 +290,11 @@ body {
 
   .splash-content-info {
     font-weight: 300;
+  }
+
+  .main-container-one {
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
   }
 
 }
