@@ -53,7 +53,7 @@ body {
   letter-spacing: 2px;
 }
 
-.under-line {
+.underline {
   text-decoration: underline;
 }
 
@@ -66,7 +66,7 @@ body {
 */
 
 .body-header {
-  background-color: #1A202C;
+  background-color: #1F2A30;
   color: white;
   padding-block: .25em;
 }
@@ -224,6 +224,75 @@ body {
   }
 
 /* 
+============ body footer ============
+*/
+
+.footer-cite-link-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1.5em 2em;
+}
+
+.footer-cite-links {
+  font-weight: 700;
+  font-family: serif;
+  opacity: .9;
+}
+
+.footer-cite-links:hover,
+.footer-cite-links:focus {
+  opacity: 1;
+}
+
+.footer-svg-link-container {
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1.5em 2em;
+  border-top: 1px solid grey;
+  margin-inline: auto;
+  max-width: 90%;
+}
+
+.icon {
+  opacity: .7;
+}
+
+.icon:hover,
+.icon:focus {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.body-footer {
+  background-color: #1F2A30;
+  color: white;
+  text-align: center;
+}
+
+.codex-footer {
+  padding: 1.75em 2em;
+  border-top: 1px solid grey;
+  margin-inline: auto;
+  max-width: 90%;
+  opacity: .7;
+}
+
+.body-footer-links {
+  color: white;
+  opacity: .7;
+}
+
+.body-footer-links:hover,
+.body-footer-links:focus {
+  opacity: 1;
+}
+
+
+
+/* 
 ============ media queries ============
 */
 
@@ -295,6 +364,20 @@ body {
   .main-container-one {
     grid-template-columns: 1fr 1fr;
     gap: 2em;
+  }
+
+  .small-font {
+    font-size: .8rem;
+  }
+
+  .footer-cite-link-container {
+    flex-direction: row;
+    gap: 5em;
+  }
+
+  .footer-svg-link-container,
+  .codex-footer {
+    max-width: 600px;
   }
 
 }
