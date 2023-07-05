@@ -33,18 +33,6 @@ body {
   background-color: aliceblue;
 }
 
-h1 {
-  font-size: ;
-}
-
-h2 {
-  font-size: ;
-}
-
-h3 {
-  font-size: ;
-}
-
 .small-font {
   font-size: .625rem;
 }
@@ -138,18 +126,6 @@ h3 {
     border-bottom: 2px solid black;
     color: black;
     cursor: default;
-  }
-
-  /* -- splash content container -- */
-
-  .splash-content-container {
-    flex-direction: column;
-  }
-
-  .splash-content {
-    text-align: left;
-    margin-inline: 1em;
-    flex-direction: column;
   }
 
 /* 
