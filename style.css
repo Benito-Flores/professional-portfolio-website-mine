@@ -261,7 +261,7 @@ body {
   .main-container-three-title {
     text-align: center;
     margin-bottom: 2em;
-    margin-top: .7em;
+    margin-top: .5em;
   }
 
   .main-container-three-article-container {
@@ -500,7 +500,6 @@ body {
   }
 
   .services-article {
-    background-color: white;
     flex: 1;
   }
 
